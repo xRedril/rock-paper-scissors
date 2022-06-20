@@ -6,11 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <div class="showcase">
+        <div class="fighter set-index">
+            <h2 class="choose-fighter">
+                Choose your fighter!
+            </h2>
+            <h3 class="first-to-five">
+                First to 5 points wins the game.
+            </h3>
+        </div>
+        <div class="rps-choice set-index">
+            <p class="player-choice choice-style">
+                ❔
+            </p>
+            <p class="computer-choice choice-style">❔</p>
+        </div>
+        <div class="score set-index">
+            <h3 class="player-score score-style">
+                Player: 0
+            </h3>
+            <h3 class="computer-score score-style">
+                Computer: 0
+            </h3>
+        </div>
+        <div class="container set-index">
+            <button id="rock" class="btn-style">
+                Rock
+            </button>
+            <button id="paper" class="btn-style">
+                Paper
+            </button>
+            <button id="scissors" class="btn-style">
+                Scissors
+            </button>
+        </div>
+        <div class="winner set-index">
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <!-- <span class="close">&times;</span> -->
+                    <p class="play-again">Would you like to play again?</p>
+                    <button class="restart">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © xRedril Productions 2022</p>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
